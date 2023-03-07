@@ -6,6 +6,15 @@
 trigger:
 - master
 
+pr:
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+      - docs/*
+      - README.md
+
 pool:
   vmImage: ubuntu-latest
 
